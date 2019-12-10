@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <title>Palette</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">CodeJam-Palette</h1>
+  </header>
+  <main>
+    <section class="palette tools shadow">
+      <button id="bucket" class="paint-bucket button">Paint bucket (q)</button>
+      <button id="pipette" class="choose-color button underline">Choose color (w)</button>
+      <button id="move" class="move button">Move (e)</button>
+      <button id="transform" class="transform button">Transform (r)</button>
+    </section>
+
+    <section id="colors" class="colors tools shadow">
+      <div  class="current-color colors-item">
+        <span id="current" class="current-swatch color"></span>
+        <span class="colors-text">Current color</span>
+      </div>
+      <div  class="previous-color colors-item underline">
+        <span id="previous" class="previous-swatch color"></span>
+        <span class="colors-text">Prev color</span>
+      </div>
+      <div id="predefined" class="predefined-colors colors-item">
+        <div id="predefined-1" class="predefined color red"></div>
+        <div id="predefined-2" class="predefined color orange"></div>
+        <div id="predefined-3" class="predefined color yellow"></div>
+        <div id="predefined-4" class="predefined color green"></div>
+        <div id="predefined-5" class="predefined color aqua"></div>
+        <div id="predefined-6" class="predefined color blue"></div>
+        <div id="predefined-7" class="predefined color purple"></div>
+        <div id="predefined-8" class="predefined color black"></div>
+      </div>
+    </section>
+
+    <section id="canvas" class="canvas">
+      <div id="top-left" class="initial canvas-item" draggable="true"></div>
+      <div id="top-center" class="initial canvas-item" draggable="true"></div>
+      <div id="top-right" class="initial canvas-item" draggable="true"></div>
+      <div id="center-left" class="initial canvas-item" draggable="true"></div>
+      <div id="center-center" class="initial canvas-item" draggable="true"></div>
+      <div id="center-right" class="initial canvas-item" draggable="true"></div>
+      <div id="bottom-left" class="initial canvas-item" draggable="true"></div>
+      <div id="bottom-center" class="initial canvas-item" draggable="true"></div>
+      <div id="bottom-right" class="initial canvas-item" draggable="true"></div>
+    </section>
+  </main>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
